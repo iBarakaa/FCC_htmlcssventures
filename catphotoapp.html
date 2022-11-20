@@ -1,0 +1,86 @@
+<!-- required declaration as a coding standard -->
+<!DOCTYPE html>
+<!-- specifies language is written in English -->
+<html lang="eng">
+<head>
+    <!-- Appears on title bar and stuff -->
+    <title>CatPhotoApp</title>
+    <meta charset="UTF-8"> <!-- allows users to interact with native language -->
+</head>
+<body>
+    <!-- The most important elements are h1 elements in descending order -->
+    <h1>CatPhotoApp</h1>
+    <!-- this tag identifies the main section of the page (ease of reading and help with Search Engine Optimization) -->
+    <!-- Procedure of placing elements within main tag is called Nesting. (Nested Elements are indented to make HTML easier to read) -->
+    <main> 
+        <!-- Sections separate differently grouped content -->
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- Add link to Cat Photos -->
+            <!-- the anchor tag <a> links to another webpage where href references to another website and target attribute directs to page-->
+            <p>Click here to view more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a></p> <!-- Creation of paragraph texts in Websites (They are block elements hence take up entire width) -->
+            <!-- Self closing tag (does not require closing tags)--> 
+            <!--src specifies the image url + alt provides image details in the event image fails to load -->
+            <a target="_blank" href="https://freecatphotoapp.com"><img src = 'https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg' alt = 'A cute orange cat lying on its back'></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <!-- Unordered List -->
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!-- Figure elements allow for captioning and ID of image as a figure -->
+            <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg">
+            <!-- <em> elements italisize text -->
+            <figcaption>Cats <em>love</em> lasagna!</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>  
+            <!-- Ordered List -->
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                <!-- <strong> elements bold text -->
+                <figcaption>Cats <strong>hate</strong> other cats!</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <!-- <form> elements create webforms whereas the action attributes specify where the data entered in the form will go-->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- <label> elements allows for text that stand for a button to be interactible -->
+                <fieldset>  <!-- <fieldset> element covers similar contents within a border -->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input type='radio' id='outdoor' name='indoor-outdoor' value="outdoor"> Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend> <!-- <legend> element adds context to the fieldset given -->
+                    <!-- Value allows for faster processing in the web page name/id/value are essential for input types -->
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked><label for="loving"> Loving</label>
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy"> Lazy</label>
+                    <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic"> Energetic</label>
+                </fieldset>
+                <!-- <input> elements are self closing tags similar to <img>-->
+                <!-- attributes within the input tags are type (specifies input state) name(specifies exact input being fed) placeholder (hints at input to be entered) required (needs no value as it does not allow progress until input is read) -->
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <!-- the button can have attributes such as type to ensure no confusion. Additionally, buttons are inline elements coupled with input -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- Appears at the foot of the page -->
+    <footer>
+        <p>
+           No copyright - <a href="https://www.freecodecamp.org/">freeCodeCamp.org</a> 
+        </p>
+    </footer>
+</body>
+</html>  
