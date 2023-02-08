@@ -10,3 +10,10 @@ body {
     background-color: #1b1b32;
     color: #f5f6f7;
 }
+
+label {
+    /* makes label elements appear on separate lines */
+    display: block;
+    /* separates elements from each other */
+    margin: 0.5rem 0;
+}
