@@ -3,4 +3,10 @@ body {
 
     /* view port height */
     height: 100vh;
+    /* removing default horizontal scrollbar */
+    margin: 0;
+
+    /* color manipulation of text and background */
+    background-color: #1b1b32;
+    color: #f5f6f7;
 }
