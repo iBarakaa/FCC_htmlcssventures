@@ -31,7 +31,13 @@
             <!-- pattern attribute defines regular expression that the password must match to be considered valid (alternative of minlength attribute)-->
             <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
-        <fieldset></fieldset>
+        <fieldset>
+            <!-- defining radio buttons with the same name attribute allows selection of only one of the values -->
+            <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal Account </label>
+            <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business Account </label>
+            <!-- the text terms and conditions is now linked to a site -->
+            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required><a href="https://www.freecodecamp.org/news/terms-of-service/">I accept the Terms & Conditions</a></label>
+        </fieldset>
         <fieldset></fieldset>
         <!-- adds a submit section that sends over the data to specified url -->
         <input type="submit" value="Submit">
