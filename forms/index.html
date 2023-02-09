@@ -22,13 +22,19 @@
             <!-- Label elements are inline elements -->
             <!-- Addition of input blocks within label elements  -->
             <!-- the for attributes and the id attributes are meant for accessibility best practices -->
-            <label for="first-name">Enter Your First Name: <input id="first-name"></label>
-            <label for="last-name">Enter Your Last Name: <input id="first-name"></label>
-            <label for="email">Enter Your Email: <input id="first-name"></label>
-            <label for="new-password">Create a New Password: <input id="first-name"></label>
+            <!-- the type attribute specifies the nature of the input -->
+            <!-- required attributes result to errors on unsubmitted required fields -->
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
+            <label for="email">Enter Your Email: <input id="email" type="email" required></label>
+            <!-- minlength attributes specify custom validations to input -->
+            <!-- pattern attribute defines regular expression that the password must match to be considered valid (alternative of minlength attribute)-->
+            <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
         <fieldset></fieldset>
         <fieldset></fieldset>
+        <!-- adds a submit section that sends over the data to specified url -->
+        <input type="submit" value="Submit">
     </form>
     
 </body>
