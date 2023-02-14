@@ -40,23 +40,27 @@
         </fieldset>
         <fieldset>
             <!-- the input type attribute allows the uploading of files -->
-            <label>Upload profile picture: <input type="file"></label>
+            <label for="profile-picture">Upload profile picture: <input id="profile-picture" type="file"></label>
             <!-- the type field number allows input of -ve to +ve number -->
             <!-- min and max attributes are meant for the range -->
-            <label>Input your age (years): <input type="number" min="13" max="120"></label>
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"></label>
 
             <!-- the select element creates a dropdown -->
-            <label>
+            <label for="referrer">
                 How did you hear about us?
-                <select>
-                    <option>(select one)</option>
-                    <option>freeCodeCamp News</option>
-                    <option>freeCodeCamp YouTube Channel</option>
-                    <option>freeCodeCamp Forum</option>
-                    <option>Other</option>
+                <select id="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
                 </select>
             </label>
-            
+
+            <!-- text area allows for the multiline text entry -->
+            <!-- rows and columns attributes increase the sizes of the textarea -->
+            <!-- placeholder attributes gives the user an idea of what to be input on the specified element -->
+            <label for="bio">Provide a bio: <textarea id="bio" cols="30" rows="3" placeholder="I like coding in the skies ... "></textarea> </label>
         </fieldset>
         <!-- adds a submit section that sends over the data to specified url -->
         <input type="submit" value="Submit">
