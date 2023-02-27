@@ -24,31 +24,31 @@
             <!-- the for attributes and the id attributes are meant for accessibility best practices -->
             <!-- the type attribute specifies the nature of the input -->
             <!-- required attributes result to errors on unsubmitted required fields -->
-            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required></label>
-            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
-            <label for="email">Enter Your Email: <input id="email" type="email" required></label>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required></label>
             <!-- minlength attributes specify custom validations to input -->
             <!-- pattern attribute defines regular expression that the password must match to be considered valid (alternative of minlength attribute)-->
-            <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
+            <label for="new-password">Create a New Password: <input id="new-password" name="new-passwprd" type="password" pattern="[a-z0-5]{8,}" required></label>
         </fieldset>
         <fieldset>
             <!-- defining radio buttons with the same name attribute allows selection of only one of the values -->
             <label for="personal-account"><input type="radio" name="account-type" id="personal-account"> Personal Account </label>
             <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business Account </label>
             <!-- the text terms and conditions is now linked to a site -->
-            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms & Conditions</a></label>
+            <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">Terms & Conditions</a></label>
         </fieldset>
         <fieldset>
             <!-- the input type attribute allows the uploading of files -->
-            <label for="profile-picture">Upload profile picture: <input id="profile-picture" type="file"></label>
+            <label for="profile-picture">Upload profile picture: <input id="profile-picture" name="profile-picture" type="file"></label>
             <!-- the type field number allows input of -ve to +ve number -->
             <!-- min and max attributes are meant for the range -->
-            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"></label>
+            <label for="age">Input your age (years): <input id="age" name="age" type="number" min="13" max="120"></label>
 
             <!-- the select element creates a dropdown -->
             <label for="referrer">
                 How did you hear about us?
-                <select id="referrer">
+                <select id="referrer" name="referrer">
                     <option value="">(select one)</option>
                     <option value="1">freeCodeCamp News</option>
                     <option value="2">freeCodeCamp YouTube Channel</option>
@@ -60,7 +60,7 @@
             <!-- text area allows for the multiline text entry -->
             <!-- rows and columns attributes increase the sizes of the textarea -->
             <!-- placeholder attributes gives the user an idea of what to be input on the specified element -->
-            <label for="bio">Provide a bio: <textarea id="bio" cols="30" rows="3" placeholder="I like coding in the skies ... "></textarea> </label>
+            <label for="bio">Provide a bio: <textarea id="bio" name="bio" cols="30" rows="3" placeholder="I like coding in the skies ... "></textarea> </label>
         </fieldset>
         <!-- adds a submit section that sends over the data to specified url -->
         <input type="submit" value="Submit">
